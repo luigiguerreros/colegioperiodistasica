@@ -8,6 +8,9 @@ gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
 gem 'rails_12factor', :group => :production
 
+#Simple form
+gem "simple_form", "~> 3.0.0"
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
