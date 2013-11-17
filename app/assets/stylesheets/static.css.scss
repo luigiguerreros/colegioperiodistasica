@@ -1,7 +1,42 @@
 #static {
-	.cuadro-img{
-                  background-color: gray;
-                  height: 20px;
-                  width: 100%;
-               }
+
+	.row {
+		.col-md-3 {
+			.panel-info {
+				border-color: #463265;
+				.panel-heading {
+					color: white;
+					background-color: #463265;
+					border-color: #463265;
+				}
+			}
+		}
+	}
+	.slider {
+		max-height: 300px;
+
+		.carousel-indicators {
+			bottom: 0px;
+		}
+		.label-card {
+			position: absolute;
+			width: 96.6%;
+			height: 34%;
+			background-color: black;
+			opacity: 0.7;
+			top: 349px;
+			border-radius: 0 0 6px 6px;
+		}
+		.texto-label{
+			position: absolute;
+			top: 350px;
+			color: white;
+			padding: 10px;
+			font-size: 25px;
+		}
+		.carousel-inner{
+			height: 450px;
+			min-width: 100%;
+		}
+	}
 }

@@ -1,3 +1,37 @@
-.header-link{
-padding: 10px 0 10px 0;
+.cabecera{
+	width: 100%;
+	.header-link{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		white-space: nowrap;
+
+		.link{
+			height: 50px;
+			.btn {
+				background:#222;
+				color: #ccc;
+				text-transform: uppercase;
+				&:hover{
+					background:black;
+				}
+			}
+			.main {
+				background:black;
+			}
+		}
+	}
+
+	.navbar-inverse {
+	height: 140px;
+	width: 100%;
+
+	background-color: #463265;
+		.navbar-brand{
+			color:white;
+			&:hover{
+				color:#999999;
+			}
+		}
+	}
+
 }
