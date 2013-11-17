@@ -1,0 +1,28 @@
+
+<h1>Nuestros Corresponsales</h1>
+<%= render 'menu' %>
+<div class="row">
+
+<% @corresponsales.each do |corresponsal| %>
+<div class="col-md-6">
+    <div class="panel panel-default">
+          <div class="panel-body">
+              <div class="botones" style="float: right">
+                  <%= link_to 'Ver', corresponsal, class: "label label-info" %>
+                  <%= link_to 'Edit', edit_corresponsal_path(corresponsal), class: "label label-warning"%>
+                  <%= link_to 'Destroy', corresponsal, class: "label label-danger", method: :delete, data: { confirm: 'Estas seguro?' } %>
+              </div>
+              <h4><%= corresponsal.nombres %></h4></br>
+              <h4><%= corresponsal.apellidos %></h4></br>
+              <h4><%= corresponsal.ciudad %></h4>
+          </div>
+    <div class="panel-footer">
+            <i class="fa fa-user fa-2x"></i><%= corresponsal.usuario %>
+    </div>
+    </div>
+    </div>
+<% end %>
+
+</div>
+<br>
+

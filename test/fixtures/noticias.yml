@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  corresponsal_id: 1
+  titulo: MyString
+  contenido: MyText
+  ciudad: MyString
+  provincia: MyString
+  url_imagen_noticia: MyString
+  seccion: MyString
+
+two:
+  corresponsal_id: 1
+  titulo: MyString
+  contenido: MyText
+  ciudad: MyString
+  provincia: MyString
+  url_imagen_noticia: MyString
+  seccion: MyString

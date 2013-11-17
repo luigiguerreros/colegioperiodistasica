@@ -1,0 +1,20 @@
+<h1>Ultimas Noticias</h1>
+<%= render 'menu' %>
+<div class="row noticia">
+
+        <% @noticias.each do |noticia|%>
+        <div class="col-md-6">
+        <hr>
+          <div class="media">
+                  <a class="pull-left">
+                    <%= image_tag(noticia.url_imagen_noticia, :style => "width: 300px; height: 200px;") %>
+                  </a>
+                  <div class="media-body" style="text-align: justify;">
+                      <h4 class="media-heading"><%= link_to truncate(noticia.titulo, length: 115), noticia %></h4>
+                      <%= truncate(noticia.contenido, length: 200, omission: '...(continua)')%>
+                  </div>
+              </div>
+               </div>
+        <% end %>
+
+</div>
