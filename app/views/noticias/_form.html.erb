@@ -1,0 +1,45 @@
+<%= form_for(@noticia) do |f| %>
+  <% if @noticia.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@noticia.errors.count, "error") %> prohibited this noticia from being saved:</h2>
+
+      <ul>
+      <% @noticia.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :corresponsal_id %><br>
+    <%= f.number_field :corresponsal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :contenido %><br>
+    <%= f.text_area :contenido %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad %><br>
+    <%= f.text_field :ciudad %>
+  </div>
+  <div class="field">
+    <%= f.label :provincia %><br>
+    <%= f.text_field :provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :url_imagen_noticia %><br>
+    <%= f.text_field :url_imagen_noticia %>
+  </div>
+  <div class="field">
+    <%= f.label :seccion %><br>
+    <%= f.text_field :seccion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Corresponsal:</strong>
+  <%= @noticia.corresponsal_id %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @noticia.contenido %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @noticia.ciudad %>
+</p>
+
+<p>
+  <strong>Provincia:</strong>
+  <%= @noticia.provincia %>
+</p>
+
+<p>
+  <strong>Url imagen noticia:</strong>
+  <%= @noticia.url_imagen_noticia %>
+</p>
+
+<p>
+  <strong>Seccion:</strong>
+  <%= @noticia.seccion %>
+</p>
+
+<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+<%= link_to 'Back', noticias_path %>

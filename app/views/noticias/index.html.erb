@@ -1,0 +1,39 @@
+<h1>Listing noticias</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Corresponsal</th>
+      <th>Titulo</th>
+      <th>Contenido</th>
+      <th>Ciudad</th>
+      <th>Provincia</th>
+      <th>Url imagen noticia</th>
+      <th>Seccion</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @noticias.each do |noticia| %>
+      <tr>
+        <td><%= noticia.corresponsal.usuario %></td>
+        <td><%= noticia.titulo %></td>
+        <td><%= noticia.contenido %></td>
+        <td><%= noticia.ciudad %></td>
+        <td><%= noticia.provincia %></td>
+        <td><%= noticia.url_imagen_noticia %></td>
+        <td><%= noticia.seccion %></td>
+        <td><%= link_to 'Show', noticia %></td>
+        <td><%= link_to 'Edit', edit_noticia_path(noticia) %></td>
+        <td><%= link_to 'Destroy', noticia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Noticia', new_noticia_path %>

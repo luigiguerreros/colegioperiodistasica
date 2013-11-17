@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @corresponsal.usuario %>
+</p>
+
+<p>
+  <strong>Nombres:</strong>
+  <%= @corresponsal.nombres %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @corresponsal.apellidos %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @corresponsal.correo %>
+</p>
+
+<p>
+  <strong>Telefono fijo:</strong>
+  <%= @corresponsal.telefono_fijo %>
+</p>
+
+<p>
+  <strong>Telefono movil:</strong>
+  <%= @corresponsal.telefono_movil %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @corresponsal.ciudad %>
+</p>
+
+<p>
+  <strong>Provincia:</strong>
+  <%= @corresponsal.provincia %>
+</p>
+
+<%= link_to 'Edit', edit_corresponsal_path(@corresponsal) %> |
+<%= link_to 'Back', corresponsales_path %>

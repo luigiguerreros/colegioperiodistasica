@@ -1,0 +1,2 @@
+module CorresponsalesHelper
+end

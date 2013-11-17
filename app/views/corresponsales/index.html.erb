@@ -1,0 +1,41 @@
+<h1>Listing corresponsales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Correo</th>
+      <th>Telefono fijo</th>
+      <th>Telefono movil</th>
+      <th>Ciudad</th>
+      <th>Provincia</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @corresponsales.each do |corresponsal| %>
+      <tr>
+        <td><%= corresponsal.usuario %></td>
+        <td><%= corresponsal.nombres %></td>
+        <td><%= corresponsal.apellidos %></td>
+        <td><%= corresponsal.correo %></td>
+        <td><%= corresponsal.telefono_fijo %></td>
+        <td><%= corresponsal.telefono_movil %></td>
+        <td><%= corresponsal.ciudad %></td>
+        <td><%= corresponsal.provincia %></td>
+        <td><%= link_to 'Show', corresponsal %></td>
+        <td><%= link_to 'Edit', edit_corresponsal_path(corresponsal) %></td>
+        <td><%= link_to 'Destroy', corresponsal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Corresponsal', new_corresponsal_path %>
