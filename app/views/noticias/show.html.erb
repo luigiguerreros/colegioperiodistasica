@@ -10,7 +10,7 @@
   <%= @noticia.titulo %>
 </p>
 
- <%= image_tag(noticia.url_imagen_noticia, :class => "img-rounded") %>
+ <%= image_tag(@noticia.url_imagen_noticia, :class => "img-rounded") %>
 <p>
   <strong>Contenido:</strong>
   <%= @noticia.contenido %>
@@ -24,11 +24,6 @@
 <p>
   <strong>Provincia:</strong>
   <%= @noticia.provincia %>
-</p>
-
-<p>
-  <strong>Url imagen noticia:</strong>
-  <%= @noticia.url_imagen_noticia %>
 </p>
 
 <p>
