@@ -33,24 +33,23 @@
 	      </div>
 	      <div class="label-card img-rounded">
 	      </div>
-	      <div class="texto-label">Hola</div>
+	      <div class="texto-label">Frase del  colelgio de periodistas</div>
 	 </div>
 </div>
 
 <hr>
 
-<div class="row">
+<div class="row noticia">
 	<div class="col-md-8">
 	<% @noticias.each do |noticia|%>
 	<hr>
 		<div class="media">
-		        <a class="pull-left" href="#">
-		          <img  style="" src="" >
+		        <a class="pull-left">
 		          <%= image_tag(noticia.url_imagen_noticia, :style => "width: 300px; height: 200px;") %>
 		        </a>
 		        <div class="media-body">
-			          <h2 class="media-heading"><%= link_to noticia.titulo, noticia %></h2>
-			          <%= truncate(noticia.contenido, length: 240, omission: '... (continua)')%>
+			          <h2 class="media-heading"><%= link_to truncate(noticia.titulo, length: 94), noticia %></h2>
+			          <%= truncate(noticia.contenido, length: 315, omission: '...(continua)')%>
 		        </div>
 	      </div>
 	<% end %>

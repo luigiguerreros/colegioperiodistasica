@@ -25,6 +25,29 @@
 	height: 140px;
 	width: 100%;
 
+	.collapse{
+
+		.ingresar{
+			top: 38px;
+			left: 234px;
+		}
+		.logo {
+			position: absolute;
+			width: 100px;
+			max-height: 100px;
+			top: 10px;
+			left: 130px;
+		}
+		.titulo {
+			left: 100px;
+			h1{
+				font-size: 50px;
+				margin-left: 299px;
+			}
+		}
+
+	}
+
 	background-color: #463265;
 		.navbar-brand{
 			color:white;
