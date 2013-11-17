@@ -1,39 +1,20 @@
-<h1>Listing noticias</h1>
+<h1>Ultimas Noticias</h1>
+<%= render 'menu' %>
+<div class="row noticia">
 
-<table>
-  <thead>
-    <tr>
-      <th>Corresponsal</th>
-      <th>Titulo</th>
-      <th>Contenido</th>
-      <th>Ciudad</th>
-      <th>Provincia</th>
-      <th>Url imagen noticia</th>
-      <th>Seccion</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+        <% @noticias.each do |noticia|%>
+        <div class="col-md-6">
+        <hr>
+          <div class="media">
+                  <a class="pull-left">
+                    <%= image_tag(noticia.url_imagen_noticia, :style => "width: 300px; height: 200px;") %>
+                  </a>
+                  <div class="media-body" style="text-align: justify;">
+                      <h4 class="media-heading"><%= link_to truncate(noticia.titulo, length: 115), noticia %></h4>
+                      <%= truncate(noticia.contenido, length: 200, omission: '...(continua)')%>
+                  </div>
+              </div>
+               </div>
+        <% end %>
 
-  <tbody>
-    <% @noticias.each do |noticia| %>
-      <tr>
-        <td><%= noticia.corresponsal.usuario %></td>
-        <td><%= noticia.titulo %></td>
-        <td><%= noticia.contenido %></td>
-        <td><%= noticia.ciudad %></td>
-        <td><%= noticia.provincia %></td>
-        <td><%= noticia.url_imagen_noticia %></td>
-        <td><%= noticia.seccion %></td>
-        <td><%= link_to 'Show', noticia %></td>
-        <td><%= link_to 'Edit', edit_noticia_path(noticia) %></td>
-        <td><%= link_to 'Destroy', noticia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Noticia', new_noticia_path %>
+</div>
