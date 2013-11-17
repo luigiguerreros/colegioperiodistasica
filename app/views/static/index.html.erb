@@ -45,19 +45,16 @@
 	<hr>
 		<div class="media">
 		        <a class="pull-left" href="#">
-		          <img class="media-object" data-src="holder.js/64x64" alt="400x300" style="width: 300px; height: 200px;" src="" >
+		          <img  style="" src="" >
+		          <%= image_tag(noticia.url_imagen_noticia, :style => "width: 300px; height: 200px;") %>
 		        </a>
 		        <div class="media-body">
 			          <h2 class="media-heading"><%= link_to noticia.titulo, noticia %></h2>
-			          <%= truncate(noticia.contenido, length: 140, omission: '... (continua)')%>
+			          <%= truncate(noticia.contenido, length: 240, omission: '... (continua)')%>
 		        </div>
 	      </div>
 	<% end %>
 	</div>
-
-
-
-
 
 	<div class="col-md-4">
 		<div class="list-group">
