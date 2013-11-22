@@ -1,10 +1,13 @@
 Colegioperiodistasica::Application.routes.draw do
 
   get "static/index"
+  get '/colegiatura' => 'static#colegiatura'
+  get '/documentacion' => 'static#documentacion'
+  get '/miembros' => 'static#miembros'
   root 'static#index'
   resources :noticias
-
-  resources :corresponsales
+  devise_for :users
+  #resources :corresponsales
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

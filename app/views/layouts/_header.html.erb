@@ -26,7 +26,11 @@
               </div>
             </li>
             <li>
-              <a href="#" class="ingresar btn btn-primary" role="button">Ingresar</a>
+            <% if user_signed_in? %>
+            <%= link_to "Salir", destroy_user_session_path, class: "ingresar btn-primary", :method=>"delete" %>
+                <% else %>
+              <%= link_to "Ingresar", new_user_session_path, class: "ingresar btn-primary" %>
+                <% end %>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -36,11 +40,11 @@
 <div class="header-link container">
   <div class="btn-group btn-group-justified link">
         <a class="btn btn-default main"  href="/" role="button">Principal</a>
-        <a class="btn btn-default" href="/" role="button">Miembros de la Orden</a>
-        <a class="btn btn-default" href="/" role="button">Colegiatura</a>
-        <a class="btn btn-default" href="/" role="button">Documentación</a>
+        <a class="btn btn-default" href="/miembros" role="button">Miembros de la Orden</a>
+        <a class="btn btn-default" href="/colegiatura" role="button">Colegiatura</a>
+        <a class="btn btn-default" href="/documentacion" role="button">Documentación</a>
         <a class="btn btn-default" href="/noticias" role="button">Noticias</a>
-        <a class="btn btn-default" href="/corresponsales" role="button">Corresponsales</a>
+        <a class="btn btn-default" href="/users/sign_up" role="button">Corresponsales</a>
   </div>
 </div>
 </div>
