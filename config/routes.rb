@@ -1,5 +1,7 @@
 Colegioperiodistasica::Application.routes.draw do
 
+  resources :corresponsales
+
   get "static/index"
   get '/colegiatura' => 'static#colegiatura'
   get '/documentacion' => 'static#documentacion'

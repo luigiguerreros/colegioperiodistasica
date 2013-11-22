@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131122031506) do
+ActiveRecord::Schema.define(version: 20131122210348) do
+
+  create_table "corresponsales", force: true do |t|
+    t.string   "usuario"
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.string   "correo"
+    t.string   "telefono_fijo"
+    t.string   "telefono_movil"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "noticias", force: true do |t|
     t.integer "user_id"

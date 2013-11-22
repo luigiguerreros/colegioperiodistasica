@@ -1,3 +1,3 @@
 class Noticia < ActiveRecord::Base
-belongs_to :user
+belongs_to :corresponsal
 end
