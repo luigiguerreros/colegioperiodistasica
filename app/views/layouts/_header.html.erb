@@ -17,13 +17,16 @@
             <li class="active"></li>
             <li>
               <div class="logo img-circle">
-                <%= image_tag("https://m.ak.fbcdn.net/sphotos-a.ak/hphotos-ak-ash3/1454712_214185995428756_1663386943_n.jpg", :style => "width: 120px; height: 120px;", :class => "img-circle") %>
+                <%= image_tag("/logo.jpg", :style => "width: 120px; height: 120px; border-radius: 20%;", :class => "img-circle" ) %>
               </div>
             </li>
             <li>
               <div class="titulo">
                   <a class="navbar-brand" href="/"><h1>Colégio Periodistas de Ica</h1></a>
               </div>
+            </li>
+            <li>
+              <%= image_tag("/luto.png", :style => "width: 120px; height: 120px;" ) %>
             </li>
             <li>
             <% if user_signed_in? %>
