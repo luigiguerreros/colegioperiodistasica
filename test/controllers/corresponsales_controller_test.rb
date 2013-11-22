@@ -18,7 +18,7 @@ class CorresponsalesControllerTest < ActionController::TestCase
 
   test "should create corresponsal" do
     assert_difference('Corresponsal.count') do
-      post :create, corresponsal: { apellidos: @corresponsal.apellidos, ciudad: @corresponsal.ciudad, correo: @corresponsal.correo, nombres: @corresponsal.nombres, provincia: @corresponsal.provincia, telefono_fijo: @corresponsal.telefono_fijo, telefono_movil: @corresponsal.telefono_movil, usuario: @corresponsal.usuario }
+      post :create, corresponsal: { apellidos: @corresponsal.apellidos, correo: @corresponsal.correo, nombres: @corresponsal.nombres, telefono_fijo: @corresponsal.telefono_fijo, telefono_movil: @corresponsal.telefono_movil, usuario: @corresponsal.usuario }
     end
 
     assert_redirected_to corresponsal_path(assigns(:corresponsal))
@@ -35,7 +35,7 @@ class CorresponsalesControllerTest < ActionController::TestCase
   end
 
   test "should update corresponsal" do
-    patch :update, id: @corresponsal, corresponsal: { apellidos: @corresponsal.apellidos, ciudad: @corresponsal.ciudad, correo: @corresponsal.correo, nombres: @corresponsal.nombres, provincia: @corresponsal.provincia, telefono_fijo: @corresponsal.telefono_fijo, telefono_movil: @corresponsal.telefono_movil, usuario: @corresponsal.usuario }
+    patch :update, id: @corresponsal, corresponsal: { apellidos: @corresponsal.apellidos, correo: @corresponsal.correo, nombres: @corresponsal.nombres, telefono_fijo: @corresponsal.telefono_fijo, telefono_movil: @corresponsal.telefono_movil, usuario: @corresponsal.usuario }
     assert_redirected_to corresponsal_path(assigns(:corresponsal))
   end
 

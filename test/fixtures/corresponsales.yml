@@ -5,17 +5,13 @@ one:
   nombres: MyString
   apellidos: MyString
   correo: MyString
-  telefono_fijo: 1
-  telefono_movil: 1
-  ciudad: MyString
-  provincia: MyString
+  telefono_fijo: MyString
+  telefono_movil: MyString
 
 two:
   usuario: MyString
   nombres: MyString
   apellidos: MyString
   correo: MyString
-  telefono_fijo: 1
-  telefono_movil: 1
-  ciudad: MyString
-  provincia: MyString
+  telefono_fijo: MyString
+  telefono_movil: MyString

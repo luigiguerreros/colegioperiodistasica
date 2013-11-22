@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Atras', noticias_path , class: "btn btn-success" %>
+
+<hr/>
+<div class="row">
+<div class="col-md-6">
 <p>
   <strong>Corresponsal:</strong>
   <%= @noticia.user_id %>
@@ -9,9 +14,12 @@
   <strong>Titulo:</strong>
   <%= @noticia.titulo %>
 </p>
-
- <%= image_tag(@noticia.url_imagen_noticia, :class => "img-rounded") %>
 <p>
+  <%= image_tag(@noticia.url_imagen_noticia, :class => "img-rounded" , :style => "width: 100%;" ) %>
+</p>
+</div>
+<div class="col-md-6">
+  <p>
   <strong>Contenido:</strong>
   <%= @noticia.contenido %>
 </p>
@@ -30,6 +38,5 @@
   <strong>Seccion:</strong>
   <%= @noticia.seccion %>
 </p>
-
-<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
-<%= link_to 'Back', noticias_path %>
+</div>
+</div>
