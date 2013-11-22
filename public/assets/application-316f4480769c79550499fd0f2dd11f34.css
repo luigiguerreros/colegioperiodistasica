@@ -10,6 +10,7 @@
  *
 
 
+
  */
 
 @import "noticias";
@@ -7115,3 +7116,73 @@ td.visible-print {
     display: none !important;
   }
 }
+#corresponsales .menu {
+  margin-bottom: 20px; }
+#static .noticia .col-md-8 .media .media-body {
+  text-align: justify; }
+#static .row .col-md-3 .panel-info {
+  border-color: #463265; }
+  #static .row .col-md-3 .panel-info .panel-heading {
+    color: white;
+    background-color: #463265;
+    border-color: #463265; }
+#static .slider {
+  max-height: 300px; }
+  #static .slider .carousel-indicators {
+    bottom: 0px; }
+  #static .slider .label-card {
+    position: absolute;
+    width: 96.6%;
+    height: 34%;
+    background-color: black;
+    opacity: 0.7;
+    top: 349px;
+    border-radius: 0 0 6px 6px; }
+  #static .slider .texto-label {
+    position: absolute;
+    top: 350px;
+    color: white;
+    padding: 10px;
+    font-size: 25px; }
+  #static .slider .carousel-inner {
+    height: 450px;
+    min-width: 100%; }
+.cabecera {
+  width: 100%; }
+  .cabecera .header-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap; }
+    .cabecera .header-link .link {
+      height: 50px; }
+      .cabecera .header-link .link .btn {
+        background: #222;
+        color: #ccc;
+        text-transform: uppercase; }
+        .cabecera .header-link .link .btn:hover {
+          background: black; }
+      .cabecera .header-link .link .main {
+        background: black; }
+  .cabecera .navbar-inverse {
+    height: 140px;
+    width: 100%;
+    background-color: #463265; }
+    .cabecera .navbar-inverse .collapse .ingresar {
+      top: 38px;
+      left: 234px;
+      color: white; }
+    .cabecera .navbar-inverse .collapse .logo {
+      position: absolute;
+      width: 100px;
+      max-height: 100px;
+      top: 10px;
+      left: 130px; }
+    .cabecera .navbar-inverse .collapse .titulo {
+      left: 100px; }
+      .cabecera .navbar-inverse .collapse .titulo h1 {
+        font-size: 50px;
+        margin-left: 299px; }
+    .cabecera .navbar-inverse .navbar-brand {
+      color: white; }
+      .cabecera .navbar-inverse .navbar-brand:hover {
+        color: #999999; }
